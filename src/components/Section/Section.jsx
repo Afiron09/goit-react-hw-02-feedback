@@ -1,10 +1,7 @@
-const Section = ({ title, children }) => {
-  return (
-    <Section>
-      <h2>{title}</h2>
-      {children}
-    </Section>
-  );
+import { Box, Title } from "./Section.styled";
+export const Section = ({ title, children }) => {
+  <Box>
+    <Title>{title}</Title>
+    {children}
+  </Box>;
 };
-
-export default Section;

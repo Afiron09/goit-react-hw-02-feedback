@@ -1,15 +1,19 @@
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+import { Box, Title, Rating } from "./Statistic.styled";
+export const FeedbackOptions = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   return (
-    <>
-      <ul>
-        <li>Good: {good}</li>
-        <li>Neutral: {neutral}</li>
-        <li>Bad: {bad}</li>
-        <li>Total: {total}</li>
-        <li>Positive feedback: {positivePercentage}%</li>
-      </ul>
-    </>
+    <Box>
+      <Title>Statistics</Title>
+      <Rating>{good}</Rating>
+      <Rating>{neutral}</Rating>
+      <Rating>{bad}</Rating>
+      <Rating>Total: {total}</Rating>
+      <Rating>Positive feedback: {positivePercentage}</Rating>
+    </Box>
   );
 };
-
-export default Statistics;
