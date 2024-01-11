@@ -1,5 +1,6 @@
 import { Box, Title, Rating } from "./Statistic.styled";
 export const Statistic = ({
+  title,
   good,
   neutral,
   bad,
@@ -8,12 +9,12 @@ export const Statistic = ({
 }) => {
   return (
     <Box>
-      <Title>Statistics</Title>
-      <Rating>{good}</Rating>
-      <Rating>{neutral}</Rating>
-      <Rating>{bad}</Rating>
+      <Title>{title}</Title>
+      <Rating>Good: {good}</Rating>
+      <Rating>Neutral: {neutral}</Rating>
+      <Rating>Bad: {bad}</Rating>
       <Rating>Total: {total}</Rating>
-      <Rating>Positive feedback: {positivePercentage}</Rating>
+      <Rating>Positive feedback: {positivePercentage}%</Rating>
     </Box>
   );
 };
