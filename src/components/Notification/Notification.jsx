@@ -1,5 +1,5 @@
 import { Box } from "./Notification.styled";
 
-export const FeedbackOptions = ({ message }) => {
+export const Notification = ({ message }) => {
   return <Box>{message}</Box>;
 };

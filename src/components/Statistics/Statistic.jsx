@@ -1,5 +1,5 @@
 import { Box, Title, Rating } from "./Statistic.styled";
-export const FeedbackOptions = ({
+export const Statistic = ({
   good,
   neutral,
   bad,
